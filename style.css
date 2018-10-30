@@ -1,0 +1,10 @@
+#titulo {
+    margin-top: 2em;
+}
+textarea {
+   resize: none;
+}
+footer {
+   font-size: 0.6em;
+   padding-top:  2em;
+}
